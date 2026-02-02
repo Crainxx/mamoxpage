@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaMoxxxx</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* BACKGROUND GIF */
+.bg-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.bg-gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+/* OVERLAY GELAP */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: -2;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 380px;
+  margin: 40px auto;
+  padding: 20px;
+  animation: fadeUp 1s ease;
+}
+
+/* ANIMASI MUNCUL */
+@keyframes fadeUp {
+  from {opacity:0; transform:translateY(30px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* PROFILE */
+.profile img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 12px 0 4px;
+  text-shadow:0 0 10px rgba(255,255,255,0.8);
+}
+
+p {font-size:14px; opacity:0.9;}
+
+/* LINK BOX */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 65px;
+  border-radius: 16px;
+  margin: 14px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  transition: 0.3s;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(6px);
+}
+
+.link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+}
+
+/* ICON GAMBAR */
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* FOOTER */
+.footer {
+  margin-top:20px;
+  font-size:12px;
+  opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<!-- GIF BACKGROUND -->
+<div class="bg-gif">
+  <img src="kuda.gif">
+</div>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+  <div class="profile">
+    <img src="pp.jpg">
+    <h1>MaMoxxxx</h1>
+    <p>Creator • Gamer • Developer</p>
+  </div>
+
+  <a class="link" href="https://www.instagram.com/yottexroo?igsh=M25kZ2Y3cTl2N3E3">
+    <img src="ig.png" class="icon"> Instagram
+  </a>
+
+  <a class="link" href="https://whatsapp.com/channel/0029Vb7SlSg0lwgiRpUygF18">
+    <img src="wa.png" class="icon"> Saluran
+  </a>
+
+  <a class="link" href="https://www.tiktok.com/@moxxeeeeee?_r=1&_t=ZS-93aXdn4qiVU">
+    <img src="tt.png" class="icon"> TikTok
+  </a>
+  
+  <a class="link" href="https://discord.gg/BS7FQjyfha">
+    <img src="dc.png" class="icon"> Discord
+  </a>
+
+  <a class="link" href="https://saweria.co/Mamoxx">
+    <img src="sw.png" class="icon"> Dukungan
+  </a>
+
+  <div class="footer">© 2026 MaMoxxxx</div>
+
+</div>
+
+</body>
+</html>
